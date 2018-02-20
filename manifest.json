@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "me too thanks",
+    "description": "replaces all instances of \"me\" in a webpage with \"(me too thanks)\"",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
